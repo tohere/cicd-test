@@ -9,13 +9,16 @@ jobs:
     runs-on: ubuntu-latest
     name: 打包vue项目
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
       - name: 安装node
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: 安装pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v3
         with:
           version: latest
 
