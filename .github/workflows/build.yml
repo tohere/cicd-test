@@ -29,6 +29,6 @@ jobs:
         run: pnpm build
 
       - name: vue项目发布到github pages
-        uses: StruggleYang/VuePagesAction@2.0.0
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          useyarn: false
+          folder: dist # 构建输出目录，通常是dist
