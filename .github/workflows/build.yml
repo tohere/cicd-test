@@ -46,3 +46,10 @@ jobs:
         with:
           folder: dist
           branch: gh-pages
+          clean: true # 清理目标分支上的旧文件
+          # clean-exclude: |
+          #   .gitignore
+          #   README.md
+          # commit-message: "chore: 更新网站 [skip ci]"
+          # token: ${{ secrets.GITHUB_TOKEN }}
+          # force: true # 强制推送到目标分支
