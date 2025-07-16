@@ -37,11 +37,9 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: 打包
-        run: |
-          npm ci
-          npm run build
+        run: npm run build
 
       - name: vue项目发布到github pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: .
+          folder: dist
