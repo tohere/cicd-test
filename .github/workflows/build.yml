@@ -7,6 +7,8 @@ on:
   push:
     tags:
       - "v*"
+    branches:
+      - master
 
 jobs:
   build_vue:
@@ -43,3 +45,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
+          branch: gh-pages
