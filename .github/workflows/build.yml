@@ -14,7 +14,7 @@ jobs:
     name: 打包vue项目
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
@@ -37,9 +37,11 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: 打包
-        run: pnpm build
+        run: |
+          pnpm ci
+          pnpm build
 
       - name: vue项目发布到github pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: dist # 构建输出目录，通常是dist
+          folder: .
