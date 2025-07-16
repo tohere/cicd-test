@@ -15,6 +15,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: 安装node
         uses: actions/setup-node@v4
@@ -29,7 +31,6 @@ jobs:
       # 生成changelog
       - run: npx changelogithub
         env:
-          fetch-depth: 0
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: 安装依赖
