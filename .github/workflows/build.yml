@@ -1,4 +1,7 @@
 name: 打包vue项目
+
+permissions:
+  contents: write
 on:
   push:
     tags:
@@ -9,6 +12,11 @@ jobs:
     runs-on: ubuntu-latest
     name: 打包vue项目
     steps:
+      # 生成changelog
+      - run: npx changelogithub
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
       - name: Checkout
         uses: actions/checkout@v3
 
