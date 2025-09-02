@@ -12,10 +12,8 @@ export default {
     "@release-it/conventional-changelog": {
       infile: "CHANGELOG.md",
       header: "# Changelog",
-      preset: {
-        name: "angular",
-      },
-      prompt: true,
+      preset: "angular",
     },
   },
+  increment: false,
 } as Config;
