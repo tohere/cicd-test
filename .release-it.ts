@@ -1,9 +1,16 @@
 import { Config } from "release-it";
 
 export default {
+  github: {
+    release: true,
+    draft: true,
+  },
   git: {
     tagName: "v${version}",
     commitMessage: "v${version}",
+    push: true,
+    commit: true,
+    tag: true,
   },
   npm: {
     publish: false,
