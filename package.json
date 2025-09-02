@@ -18,6 +18,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@release-it/conventional-changelog": "^10.0.1",
     "@vitejs/plugin-vue": "^5.2.1",
     "commitizen": "^4.3.1",
     "conventional-changelog-cli": "^5.0.0",
