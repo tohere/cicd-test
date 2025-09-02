@@ -1,3 +1,12 @@
+# Changelog
+
+# [0.3.0](https://github.com/tohere/cicd-test/compare/v0.1.17...v0.1.17) (2025-09-02)
+
+
+### Features
+
+* update ([75983dd](https://github.com/tohere/cicd-test/commit/75983dd7c664220942c4e108f54d97f7ec2fce9a))
+
 ## [0.1.17](https://github.com/tohere/cicd-test/compare/v0.1.16...v0.1.17) (2025-07-16)
 
 
@@ -108,6 +117,3 @@
 ### Features
 
 * 新增路由 [#1](https://github.com/tohere/cicd-test/issues/1) ([4f85658](https://github.com/tohere/cicd-test/commit/4f856583aff9d26dc5ac9a83ff10c93c18f382ec))
-
-
-
