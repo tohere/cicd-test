@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const a = "1";
+console.log(a);
+</script>
 
 <template>
   <div class="wrap">
