@@ -15,6 +15,7 @@ export default {
       preset: {
         name: "angular",
       },
+      prompt: true,
     },
   },
 } as Config;
